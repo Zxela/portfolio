@@ -4,7 +4,17 @@
       <Navbar class="App__nav" />
       <main class="App__main">
         <transition name="fade" type="out-in">
-          <router-view></router-view>
+          <v-img
+            height="100vh"
+            gradient="to top, rgb(189,195,199,.75), rgba(44,62,80,.75)"
+            src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg"
+          >
+            <v-content id="content" class="fill-height">
+              <v-container class="fill-height" fluid clipped-left>
+                <router-view></router-view>
+              </v-container>
+            </v-content>
+          </v-img>
         </transition>
       </main>
       <v-footer color="rgba(0,0,0,0.02)" app inset>
