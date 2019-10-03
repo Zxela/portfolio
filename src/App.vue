@@ -7,7 +7,7 @@
           <router-view></router-view>
         </transition>
       </main>
-      <v-footer app>
+      <v-footer color="rgba(0,0,0,0.02)" app inset>
         <span>&copy; 2019 Alex Zvaniga</span>
       </v-footer>
     </v-app>

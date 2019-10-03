@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" app clipped>
+    <v-navigation-drawer color="grey lighten-3" v-model="drawer" app clipped>
       <v-list dense>
 
         <v-list-item v-for="(item, i) in items"
@@ -16,7 +16,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left>
+    <v-app-bar color="grey lighten-3" app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-capitalize">{{$route.name}}</v-toolbar-title>
 
@@ -38,7 +38,7 @@ export default {
       {
         to: "/about",
         text: "About Me",
-        icon: "mdi-view-dashboard"
+        icon: "mdi-account-tie"
       },
       {
         to: "/projects",
