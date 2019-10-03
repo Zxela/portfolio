@@ -1,20 +1,8 @@
 <template>
   <div id="app">
-    <v-app id="portfolio">
-      <!-- Navigation -->
+    <v-app id="inspire">
       <Navbar />
-      <!-- Site Content -->
-      <v-content>
-        <!-- Container fills  -->
-        <v-container class="fill-height" fluid>
-          <v-col>
-            <v-row align="center" justify="center"></v-row>
-            <v-divider />
-            
-          </v-col>
-        </v-container>
-      </v-content>
-
+      <router-view></router-view>
       <v-footer app>
         <span>&copy; 2019 Alex Zvaniga</span>
       </v-footer>
@@ -31,7 +19,7 @@ export default {
     source: String
   },
   created() {
-    this.$vuetify.theme.dark = true;
+    this.$vuetify.theme.dark = false;
   }
 };
 </script>

@@ -18,7 +18,7 @@
 
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title class="text-capitalize">{{$route.name}}</v-toolbar-title>
 
     </v-app-bar>
   </div>
@@ -28,7 +28,7 @@
 export default {
   name: "Navbar",
   data: () => ({
-    drawer: null,
+    drawer: false,
     items: [
       {
         to: "/",
@@ -36,17 +36,17 @@ export default {
         icon: "mdi-home"
       },
       {
-        to: "/about-me",
+        to: "/about",
         text: "About Me",
         icon: "mdi-view-dashboard"
       },
       {
-        to: "/my-work",
+        to: "/projects",
         text: "My Work",
         icon: "mdi-view-dashboard"
       },
       {
-        to: "/contact-me",
+        to: "/contact",
         text: "Contact Me",
         icon: "mdi-contact-mail"
       }
