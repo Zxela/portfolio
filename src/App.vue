@@ -5,7 +5,7 @@
       <main class="App__main">
         <transition name="fade" type="out-in">
           <v-img
-            height="100vh"
+            min-height="100vh"
             gradient="to top, rgb(189,195,199,.75), rgba(44,62,80,.75)"
             src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg"
           >
