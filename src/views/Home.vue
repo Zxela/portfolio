@@ -1,7 +1,7 @@
 <template>
   
         <v-row align="center" justify="center">
-          <v-col cols="12" sm="8" md="4">
+          <v-col cols="12" sm="8" md="6 ">
             <v-card color="rgba(250,250,250,0.8)" class="elevation-10 home-card pt-4">
               <v-row>
                 <v-card-text>

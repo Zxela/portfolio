@@ -32,9 +32,8 @@
         <v-btn
           icon
           large
-          href="https://codepen.io/johnjleider/pen/bXNzZL"
-          target="_blank"
-          v-on="on"
+          @click="$router.push({name: 'contact'})"
+          v-on="on" 
         >
           <v-icon large>mdi-contact-mail</v-icon>
         </v-btn>
