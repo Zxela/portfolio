@@ -4,7 +4,7 @@
       
         <v-card-title>
           <v-col align="center">
-            <v-img style="border-radius: 50%" max-width="200" src="@/assets/me.jpeg" class="elevation-4"/>
+            <v-img style="border-radius: 50%" max-width="200" src="https://avatars2.githubusercontent.com/u/39635641" class="elevation-4"/>
           </v-col>
           <v-col>
             <v-card-text class="display-1">Hi, I'm Alex</v-card-text>
