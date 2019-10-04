@@ -33,6 +33,6 @@ export default {
   display:flex;
 }
 #_name {
-  flex: 3 100%;
+  flex: 3 60%;
 }
 </style>
