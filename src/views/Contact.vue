@@ -1,11 +1,49 @@
 <template>
-<div>
-        <h1>This the contact me page</h1>
-</div>
+  <v-container class="fill-height justify-center">
+    <v-card width="40%" min-width="360" color="rgba(250,250,250,0.8)" class="px-5 pb-2">
+      <v-responsive max-width="700">
+        <v-card-title>
+          <v-card-text align="center" class="display-2">Contact Me</v-card-text>
+        </v-card-title>
+        <v-divider />
+        <v-spacer />
+        <v-form ref="form">
+          <v-text-field outlined v-model="name" :counter="10" label="Name" required></v-text-field>
+
+          <v-text-field outlined v-model="email" label="E-mail" required></v-text-field>
+
+          <v-text-field
+            outlined
+            v-model="emailSlug"
+            label="Email Body"
+            counter
+            maxlength="120"
+            height="40"
+          ></v-text-field>
+        </v-form>
+        <v-btn @click="click">Send</v-btn>
+
+        <v-card-actions></v-card-actions>
+      </v-responsive>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: "contact"
-}
+  name: "contact",
+  data: () => ({
+    name: null,
+    email: null,
+    emailSlug: null
+  }),
+  methods: {
+    click() {
+      // eslint-disable-next-line
+      console.log(`Name: ${this.name}`); // eslint-disable-next-line
+      console.log(`Email: ${this.email}`); // eslint-disable-next-line
+      console.log(`EmailSlug: ${this.emailSlug}`);
+    }
+  }
+};
 </script>

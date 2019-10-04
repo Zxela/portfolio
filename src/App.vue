@@ -10,9 +10,7 @@
             src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg"
           >
             <v-content id="content" class="fill-height" clipped-left>
-              <v-container class="fill-height" fluid >
-                <router-view></router-view>
-              </v-container>
+              <router-view></router-view>
             </v-content>
           </v-img>
         </transition>
