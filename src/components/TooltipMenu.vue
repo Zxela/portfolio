@@ -20,7 +20,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <v-btn :href="`http://google.com`" icon large target="_blank" v-on="on">
+        <v-btn href="https://resume.creddle.io/resume/2m8wwvhbtlk" icon large target="_blank" v-on="on">
           <v-icon large>mdi-file-account</v-icon>
         </v-btn>
       </template>
