@@ -1,7 +1,7 @@
 <template>
   <v-container class="fill-height">
     <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="4" class="px-5">
+      <v-col cols="12" sm="8" md="6" lg="4" class="px-5">
         <v-card color="rgba(250,250,250,0.8)" class="elevation-12">
           <v-row>
             <v-card-text>
