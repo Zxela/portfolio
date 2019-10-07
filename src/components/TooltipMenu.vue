@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" justify="space-between" class="mx-8 px-4">
+  <v-row align="center" justify="space-around" class="mx-8 px-4">
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
         <v-btn href="https://github.com/zxela" target="_blank" icon large v-on="on">
@@ -45,6 +45,8 @@
       </template>
       <span>Contact Me</span>
     </v-tooltip>
+
+    
   </v-row>
 </template>
 

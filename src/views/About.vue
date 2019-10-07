@@ -1,20 +1,20 @@
 <template>
   <v-container class="fill-height justify-center">
     <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="6" lg="6" class="px-5">
+      <v-col cols="11" sm="7" md="6" lg="6" xl="4" class="px-5">
         <v-card color="rgba(250,250,250,0.8)">
-          <v-card-title class="title">
+          <v-card-title class="title-box">
             <v-col align="center">
               <v-img
                 style="border-radius: 50%"
-                :max-width="$vuetify.breakpoint.mdAndUp ? '200' : '100'"
+                :max-width="$vuetify.breakpoint.mdAndUp ? '200' : '150'"
                 src="https://avatars2.githubusercontent.com/u/39635641"
                 class="elevation-4"
               />
             </v-col>
             <v-col align="center" id="_name">
               <v-card-text
-                :class="$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline'"
+                :class="$vuetify.breakpoint.mdAndUp ? 'headline' : 'title'"
               >Hi, I'm Alex</v-card-text>
             </v-col>
           </v-card-title>
@@ -22,13 +22,15 @@
           <v-responsive>
             <v-card-text
               color="black"
-              :class="$vuetify.breakpoint.mdAndUp ? 'headline' : 'subtitle-3'"
+              :class="$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2'"
             >
               I'm a Full-Stack Developer living in Toronto, Canada.
               <br />
-              <br />I specialize in building RESTful Api's for enterprise applications, and developing responsive front-ends for mobile and web.
+              <br />I specialize in building RESTful API's for enterprise applications, and developing responsive front-ends for mobile and web.
             </v-card-text>
           </v-responsive>
+          <v-card-actions>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -42,10 +44,10 @@ export default {
 };
 </script>
 <style lang="scss">
-.title {
+.title-box {
   display: flex;
 }
 #_name {
-  flex: 2 50%;
+  flex: 2 60%;
 }
 </style>
