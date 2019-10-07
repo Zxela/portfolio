@@ -5,7 +5,7 @@
         <v-card color="rgba(250,250,250,0.8)" class="px-5 pb-2 mt-12">
           <v-responsive max-width="700">
             <v-card-title>
-              <v-card-text align="center" class="display-2">Contact Me</v-card-text>
+              <v-card-text align="center" :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'" class="font-weight-black">Contact Me</v-card-text>
             </v-card-title>
             <v-divider />
             <v-spacer />
