@@ -27,7 +27,6 @@
               I'm a Full-Stack Developer living in Toronto, Canada.
               <br />
               <br />I specialize in building RESTful Api's for enterprise applications, and developing responsive front-ends for mobile and web.
-              Most proficient with Node.js, Express, VueJs, Nativescript, Symfony/Laravel, and React.
             </v-card-text>
           </v-responsive>
         </v-card>
