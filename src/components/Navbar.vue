@@ -49,6 +49,11 @@ export default {
         to: "/contact",
         text: "Contact Me",
         icon: "mdi-contact-mail"
+      },
+      {
+        to: "https://github.com/zxela",
+        text: 'Github',
+        icon: 'mdi-github-circle',
       }
     ]
   })
