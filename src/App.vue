@@ -1,23 +1,12 @@
 <template>
   <div id="app">
-    <v-app id="inspire">
+    <v-app id="portfolio">
       <Navbar class="App__nav" />
-      <main class="App__main">
+      <v-content clipped-left class="background-img">
         <transition name="fade" type="out-in">
-          <v-img
-            min-height="100vh"
-            gradient="to top, rgb(189,195,199,.75), rgba(44,62,80,.75)"
-            src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg"
-          >
-            <v-content id="content" class="fill-height" clipped-left>
-              <router-view></router-view>
-            </v-content>
-          </v-img>
+          <router-view></router-view>
         </transition>
-      </main>
-      <v-footer color="rgba(0,0,0,0.02)" app inset>
-        <span>&copy; 2019 Alex Zvaniga</span>
-      </v-footer>
+      </v-content>
     </v-app>
   </div>
 </template>
@@ -33,15 +22,29 @@ export default {
 };
 </script>
 <style lang="scss">
+$startColor: rgba(189, 195, 199, 0.75);
+$endColor: rgba(44, 62, 80, 0.75);
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.3s;
   transition-property: opacity;
   transition-timing-function: ease;
 }
-
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+.background-img {
+  background-color: rgba(189, 195, 199, 0.75);
+  background-image: url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg");
+  background-image: linear-gradient(
+      to top rgba(189, 195, 199, 0.75),
+      rgba(44, 62, 80, 0.75)
+    ),
+    url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

@@ -1,31 +1,36 @@
 <template>
   <v-container class="fill-height justify-center">
-    <v-card width="40%" min-width="360" color="rgba(250,250,250,0.8)" class="px-5 pb-2">
-      <v-responsive max-width="700">
-        <v-card-title>
-          <v-card-text align="center" class="display-2">Contact Me</v-card-text>
-        </v-card-title>
-        <v-divider />
-        <v-spacer />
-        <v-form ref="form">
-          <v-text-field outlined v-model="name" :counter="10" label="Name" required></v-text-field>
+    <v-row justify="center">
+      <v-col cols="12" sm="8" md="8">
+        <v-card color="rgba(250,250,250,0.8)" class="px-5 pb-2 mt-12">
+          <v-responsive max-width="700">
+            <v-card-title>
+              <v-card-text align="center" class="display-2">Contact Me</v-card-text>
+            </v-card-title>
+            <v-divider />
+            <v-spacer />
+            <v-form ref="form">
+              <v-text-field outlined v-model="name" :counter="10" label="Name" required></v-text-field>
 
-          <v-text-field outlined v-model="email" label="E-mail" required></v-text-field>
+              <v-text-field outlined v-model="email" label="E-mail" required></v-text-field>
+            </v-form>
+            <v-textarea
+              multi-line
+              outlined
+              v-model="emailSlug"
+              label="Email Body"
+              rows="3"
+              autogrow
+              counter
+              maxlength="240"
+            ></v-textarea>
+            <v-btn @click="click">Send</v-btn>
 
-          <v-text-field
-            outlined
-            v-model="emailSlug"
-            label="Email Body"
-            counter
-            maxlength="120"
-            height="40"
-          ></v-text-field>
-        </v-form>
-        <v-btn @click="click">Send</v-btn>
-
-        <v-card-actions></v-card-actions>
-      </v-responsive>
-    </v-card>
+            <v-card-actions></v-card-actions>
+          </v-responsive>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
