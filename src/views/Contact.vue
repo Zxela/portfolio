@@ -13,22 +13,22 @@
             </v-card-title>
             <v-divider />
             <v-spacer />
-            <v-form ref="form">
-              <v-text-field outlined v-model="email" label="E-mail" required></v-text-field>
-              <v-text-field outlined v-model="subject" label="Subject" required></v-text-field>
+            <v-form action="https://formspree.io/alex.zvaniga@gmail.com" method="POST" ref="form">
+              <v-text-field outlined v-model="name" label="Name" name="name" required></v-text-field>
+              <v-text-field outlined v-model="email" label="Email" name="email" required></v-text-field>
+              <v-textarea
+                multi-line
+                outlined
+                v-model="emailSlug"
+                label="Body"
+                name="message"
+                rows="5"
+                row-height="25"
+                counter
+                maxlength="240"
+              ></v-textarea>
+              <v-btn type="submit">Send</v-btn>
             </v-form>
-            <v-textarea
-              multi-line
-              outlined
-              v-model="emailSlug"
-              label="Body"
-              rows="5"
-              row-height="25"
-              counter
-              maxlength="240"
-            ></v-textarea>
-            <v-btn @click="click">Send</v-btn>
-
             <v-card-actions></v-card-actions>
           </v-responsive>
         </v-card>
@@ -41,21 +41,12 @@
 export default {
   name: "contact",
   data: () => ({
-    subject: null,
+    name: null,
     email: null,
     emailSlug: null
   }),
   methods: {
-    click() {
-      //
-      alert(
-        "Email service currently not available - please contact me at alex.zvaniga@gmail.com in the meantime."
-      );
-      // eslint-disable-next-line
-      console.log(`Name: ${this.subject}`); // eslint-disable-next-line
-      console.log(`Email: ${this.email}`); // eslint-disable-next-line
-      console.log(`EmailSlug: ${this.emailSlug}`);
-    }
+    click() {}
   }
 };
 </script>
