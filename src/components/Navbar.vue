@@ -69,7 +69,7 @@ export default {
   }),
   methods: {
     click(item) {
-      if (item.to[1] !== '/') {
+      if (item.to[0] !== '/') {
         window.location = item.to
       } else {
         this.$router.push(item.to)
