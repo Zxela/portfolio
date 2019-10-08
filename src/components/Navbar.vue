@@ -4,7 +4,7 @@
       <v-list dense>
 
         <v-list-item v-for="(item, i) in items"
-            :key="i" @click="$router.push(item.to)">
+            :key="i" @click="click(item)">
           <v-list-item-action>
             <v-icon>{{item.icon}}</v-icon>
           </v-list-item-action>
@@ -56,7 +56,16 @@ export default {
         icon: 'mdi-github-circle',
       }
     ]
-  })
+  }),
+  methods: {
+    click(item) {
+      if (item.to[1] !== '/') {
+        window.location = item.to
+      } else {
+        this.$router.push(item.to)
+      }
+    }
+  }
 };
 </script>
 
