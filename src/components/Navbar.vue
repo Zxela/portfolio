@@ -54,6 +54,16 @@ export default {
         to: "https://github.com/zxela",
         text: 'Github',
         icon: 'mdi-github-circle',
+      },
+      {
+        to: "https://www.linkedin.com/in/alexzvaniga/",
+        text: 'Linkedin',
+        icon: 'mdi-linkedin-box',
+      },
+      {
+        to: "https://resume.creddle.io/resume/2m8wwvhbtlk",
+        text: 'Resume',
+        icon: 'mdi-file-account',
       }
     ]
   }),
