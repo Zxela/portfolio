@@ -1,7 +1,15 @@
 <template>
   <v-container class="fill-height" fluid>
     <v-row>
-      <v-col align="center" v-for="(project, i) in projects" :key="i" cols="12" sm="6" md="4" lg="3">
+      <v-col
+        align="center"
+        v-for="(project, i) in projects"
+        :key="i"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <ProjectCard :project="project" />
       </v-col>
     </v-row>
@@ -23,7 +31,8 @@ export default {
         desc:
           "How-to on making a Cryptocurrency Wallet... Then make one for real and buy cryptocurrency from Coinbase via their buy API",
         blurb: "Cryptocurrency Wallet & Interactive Tutorial",
-        img: "https://github.com/njlatcham/Wallet-Cryptorial/blob/master/docs/Home%20Page.png?raw=true"
+        img:
+          "https://github.com/njlatcham/Wallet-Cryptorial/blob/master/docs/Home%20Page.png?raw=true"
       },
       {
         name: "Tweeter",
@@ -45,6 +54,15 @@ export default {
           "https://github.com/Zxela/chatty-app/blob/master/docs/message.png?raw=true"
       },
       {
+        name: "Cryptocointalk.ca",
+        url: "",
+        live: "https://Cryptocointalk.ca",
+        desc: "",
+        blurb: "PHP/Wordpress News and Trading Platform",
+        img:
+          "https://github.com/Zxela/Cryptocointalk/blob/master/Screen%20Shot%202019-10-09%20at%2010.55.44%20AM.png?raw=true"
+      },
+      {
         name: "Tiny App",
         url: "https://github.com/Zxela/tinyapp",
         live: "",
@@ -57,20 +75,11 @@ export default {
       {
         name: "Jungle",
         url: "https://github.com/Zxela/jungle-rails",
-        live: "",
-        desc:
-          "",
+        live: "https://boiling-eyrie-25356.herokuapp.com",
+        desc: "",
         blurb: "An e-commerce Rails app built for learning Rails",
         img:
           "https://github.com/Zxela/jungle-rails/blob/master/docs/home.png?raw=true"
-      },
-      {
-        name: "Cryptocointalk.ca",
-        url: "",
-        live: "https://Cryptocointalk.ca",
-        desc: "",
-        blurb: "PHP/Wordpress News and Trading Platform",
-        img: "https://github.com/Zxela/Cryptocointalk/blob/master/Screen%20Shot%202019-10-09%20at%2010.55.44%20AM.png?raw=true"
       }
     ]
   })
