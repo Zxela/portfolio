@@ -1,0 +1,41 @@
+<template>
+  <v-card max-width="344">
+    <v-img :src="project.img" height="200px"></v-img>
+
+    <v-card-title>
+      <div>{{project.name}}</div>
+      <span class="grey--text subtitle-2">{{project.blurb}}</span>
+    </v-card-title>
+
+    <v-card-actions>
+      <v-btn v-if="project.url" @click="click(project.url)" text>Repo</v-btn>
+
+      <v-btn v-if="project.live" @click="click(project.live)" text color="purple">Live</v-btn>
+
+      <div class="flex-grow-1"></div>
+
+      <v-btn v-if="project.desc" icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-card-text>{{project.desc}}</v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+</template>
+
+<script>
+export default {
+  name: "Project Card",
+  props: ["project"],
+  data: () => ({
+    show: false
+  })
+};
+</script>
+
+<style>
+</style>
