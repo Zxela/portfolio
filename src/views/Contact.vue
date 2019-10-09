@@ -2,7 +2,7 @@
   <v-container class="fill-height justify-center" fluid>
     <v-row justify="center">
       <v-col cols="12" sm="10" md="8" lg="6">
-        <v-card color="rgba(250,250,250,0.8)" class="px-5 pb-2">
+        <v-card color="grey lighten-3" class="px-5 pb-2">
           <v-responsive>
             <v-card-title>
               <v-card-text

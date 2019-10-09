@@ -2,7 +2,7 @@
   <v-container class="fill-height justify-center">
     <v-row justify="center">
       <v-col cols="11" sm="7" md="6" lg="6" xl="4" class="px-5">
-        <v-card color="rgba(250,250,250,0.8)">
+        <v-card color="grey lighten-3">
           <v-card-title class="title-box">
             <v-col align="center">
               <v-img
@@ -13,24 +13,18 @@
               />
             </v-col>
             <v-col align="center" id="_name">
-              <v-card-text
-                :class="$vuetify.breakpoint.mdAndUp ? 'headline' : 'title'"
-              >Hi, I'm Alex</v-card-text>
+              <v-card-text :class="$vuetify.breakpoint.mdAndUp ? 'headline' : 'title'">Hi, I'm Alex</v-card-text>
             </v-col>
           </v-card-title>
           <v-spacer />
           <v-responsive>
-            <v-card-text
-              color="black"
-              :class="$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2'"
-            >
+            <v-card-text color="black" :class="$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2'">
               I'm a Full-Stack Developer living in Toronto, Canada.
               <br />
               <br />I specialize in building RESTful API's for enterprise applications, and developing responsive front-ends for mobile and web.
             </v-card-text>
           </v-responsive>
-          <v-card-actions>
-          </v-card-actions>
+          <v-card-actions></v-card-actions>
         </v-card>
       </v-col>
     </v-row>

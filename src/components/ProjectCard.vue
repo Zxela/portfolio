@@ -1,7 +1,7 @@
 <template>
-  <v-card max-width="344">
-    <v-img :src="project.img" height="200px"></v-img>
-
+  <v-card color="grey lighten-3" class="elevation-10" max-width="344">
+    <v-img :src="project.img" height="200px" class="elevation-2"></v-img>
+    <v-divider/>
     <v-card-title>
       <div>{{project.name}}</div>
       <span class="grey--text subtitle-2">{{project.blurb}}</span>
