@@ -40,11 +40,11 @@ export default {
         text: "About Me",
         icon: "mdi-account-tie"
       },
-      // {
-      //   to: "/projects",
-      //   text: "My Work",
-      //   icon: "mdi-view-dashboard"
-      // },
+      {
+        to: "/projects",
+        text: "My Work",
+        icon: "mdi-view-dashboard"
+      },
       {
         to: "/contact",
         text: "Contact Me",
