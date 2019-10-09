@@ -1,8 +1,8 @@
 <template>
   <v-container class="fill-height" fluid>
     <v-row>
-      <v-col v-for="(project, i) in projects" :key="i" cols="12" sm="6" md="4">
-        <ProjectCard class="mx-auto" :project="project" />
+      <v-col align="center" v-for="(project, i) in projects" :key="i" cols="12" sm="6" md="4" lg="3">
+        <ProjectCard :project="project" />
       </v-col>
     </v-row>
   </v-container>
