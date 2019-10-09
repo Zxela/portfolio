@@ -67,21 +67,12 @@ export default {
       {
         name: "Cryptocointalk.ca",
         url: "",
-        live: "Cryptocointalk.ca",
+        live: "https://Cryptocointalk.ca",
         desc: "",
         blurb: "PHP/Wordpress News and Trading Platform",
         img: "https://github.com/Zxela/Cryptocointalk/blob/master/Screen%20Shot%202019-10-09%20at%2010.55.44%20AM.png?raw=true"
       }
     ]
-  }),
-  methods: {
-    click(url) {
-      if (url) {
-        window.location = url;
-      } else {
-        return;
-      }
-    }
-  }
+  })
 };
 </script>

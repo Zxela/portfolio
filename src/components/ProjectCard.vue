@@ -1,7 +1,7 @@
 <template>
   <v-card color="grey lighten-3" class="elevation-10" max-width="344">
     <v-img :src="project.img" height="200px" class="elevation-2"></v-img>
-    <v-divider/>
+    <v-divider />
     <v-card-title>
       <div>{{project.name}}</div>
       <span class="grey--text subtitle-2">{{project.blurb}}</span>
@@ -33,7 +33,16 @@ export default {
   props: ["project"],
   data: () => ({
     show: false
-  })
+  }),
+  methods: {
+    click(url) {
+      if (url) {
+        window.location = url;
+      } else {
+        return;
+      }
+    }
+  }
 };
 </script>
 
