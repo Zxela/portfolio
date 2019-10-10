@@ -4,7 +4,7 @@
     <v-divider />
     <v-card-title>
       <div>{{project.name}}</div>
-      <span class="grey--text subtitle-2">{{project.blurb}}</span>
+      <span class="grey--text subtitle-2 project-blurb">{{project.blurb}}</span>
     </v-card-title>
 
     <v-card-actions>
@@ -47,4 +47,7 @@ export default {
 </script>
 
 <style>
+.project-blurb {
+  word-wrap: break-word;
+}
 </style>
