@@ -3,8 +3,8 @@
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
         <v-btn icon large @click="$router.push({name: 'projects'})" v-on="on">
-          <v-icon v-if="$vuetify.breakpoint.mdAndUp" large>mdi-view-dashboard</v-icon>
-          <v-icon v-else medium>mdi-view-dashboard</v-icon>
+          <v-icon v-if="$vuetify.breakpoint.mdAndUp" large>mdi-desktop-mac-dashboard</v-icon>
+          <v-icon v-else medium>mdi-desktop-mac-dashboard</v-icon>
         </v-btn>
       </template>
       <span>My Portfolio</span>

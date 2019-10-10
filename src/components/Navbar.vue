@@ -43,7 +43,7 @@ export default {
       {
         to: "/projects",
         text: "My Work",
-        icon: "mdi-view-dashboard"
+        icon: "mdi-desktop-mac-dashboard"
       },
       {
         to: "/contact",
