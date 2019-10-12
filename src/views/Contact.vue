@@ -2,7 +2,7 @@
   <v-container class="fill-height justify-center" fluid>
     <v-row justify="center">
       <v-col cols="12" sm="10" md="8" lg="6">
-        <v-card color="grey lighten-3" class="px-5 pb-2">
+        <v-card color="" class="px-5 pb-2">
           <v-responsive>
             <v-card-title>
               <v-card-text
@@ -48,7 +48,7 @@
                 @input="$v.emailSlug.$touch()"
                 @blur="$v.emailSlug.$touch()"
               ></v-textarea>
-              <v-btn type="submit" @click="click">Send</v-btn>
+              <v-btn type="submit" @click="click" text outlined block class="elevation-1">Send</v-btn>
             </v-form>
             <v-card-actions></v-card-actions>
           </v-responsive>

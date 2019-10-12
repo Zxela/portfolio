@@ -6,15 +6,8 @@
           <v-row>
             <v-card-text>
               <div class="text-center">
-                <v-col
-                  id="myName"
-                  :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-                  class="font-weight-black"
-                >Alex Zvaniga</v-col>
-                <v-col
-                  :class="$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline'"
-                  class="font-weight-normal"
-                >Full-Stack Developer</v-col>
+                <v-col id="myName" class="font-weight-black display-1">Alex Zvaniga</v-col>
+                <v-col class="font-weight-normal headline">Full-Stack Developer</v-col>
               </div>
             </v-card-text>
             <v-divider />

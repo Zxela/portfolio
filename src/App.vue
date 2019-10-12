@@ -35,11 +35,11 @@ $endColor: rgba(44, 62, 80, 0.75);
   opacity: 0;
 }
 .background-img {
-  background-color: rgba(189, 195, 199, 0.75);
+  background-color: rgba(189, 195, 199, 0.8);
   background-image: url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg");
   background-image: linear-gradient(
-      to top rgba(189, 195, 199, 0.75),
-      rgba(44, 62, 80, 0.75)
+      to top rgba(189, 195, 199, 0.8),
+      rgba(44, 62, 80, 0.8)
     ),
     url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg");
 

@@ -1,5 +1,5 @@
 <template>
-  <v-card align="left" color="grey lighten-3" class="elevation-10" max-width="344">
+  <v-card align="left" color="" class="elevation-10" max-width="344">
     <v-img :src="project.img" height="200px" class="elevation-2"></v-img>
     <v-divider />
     <v-card-title>

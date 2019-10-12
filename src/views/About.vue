@@ -2,7 +2,7 @@
   <v-container class="fill-height justify-center">
     <v-row justify="center">
       <v-col cols="11" sm="7" md="6" lg="6" xl="4" class="px-5">
-        <v-card color="grey lighten-3">
+        <v-card color="">
           <v-card-title class="title-box">
             <v-col align="center">
               <v-img
