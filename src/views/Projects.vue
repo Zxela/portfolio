@@ -38,7 +38,7 @@ export default {
         name: "Tweeter",
         url: "https://github.com/Zxela/tweeter",
         live: "",
-        desc: "",
+        desc: "Tweeter is a simple, single-page Twitter clone.",
         blurb: "Tweeter is a simple, single-page Twitter clone.",
         img:
           "https://github.com/Zxela/tweeter/blob/master/docs/error.png?raw=true"
@@ -57,7 +57,7 @@ export default {
         name: "Cryptocointalk.ca",
         url: "",
         live: "https://Cryptocointalk.ca",
-        desc: "",
+        desc: "PHP/Wordpress News and Trading Platform",
         blurb: "PHP/Wordpress News and Trading Platform",
         img:
           "https://github.com/Zxela/Cryptocointalk/blob/master/Screen%20Shot%202019-10-09%20at%2010.55.44%20AM.png?raw=true"
@@ -76,7 +76,7 @@ export default {
         name: "Jungle",
         url: "https://github.com/Zxela/jungle-rails",
         live: "https://boiling-eyrie-25356.herokuapp.com",
-        desc: "",
+        desc: "An e-commerce Rails app built for learning Rails",
         blurb: "An e-commerce Rails app built for learning Rails",
         img:
           "https://github.com/Zxela/jungle-rails/blob/master/docs/home.png?raw=true"

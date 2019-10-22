@@ -4,7 +4,7 @@
     <v-divider />
     <v-card-title>
       <div>{{project.name}}</div>
-      <span class="grey--text subtitle-2 project-blurb">{{project.blurb}}</span>
+      <!-- <span class="grey--text subtitle-2 project-blurb">{{project.blurb}}</span> -->
     </v-card-title>
 
     <v-card-actions>
